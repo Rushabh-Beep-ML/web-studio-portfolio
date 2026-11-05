@@ -1,0 +1,74 @@
+/* WEBNITY design tokens.
+   Values are ESTIMATED from the Framer "Devcraft" screenshots, not extracted
+   from source. Verify against the live Framer file and adjust here only. */
+:root {
+  /* Colour */
+  --color-bg: #000000;
+  --color-bg-glow: rgba(0, 212, 170, 0.12);
+  --color-surface: #0a0d12;
+  --color-surface-raised: #0f131a;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-accent: rgba(0, 212, 170, 0.55);
+  --color-text: #ffffff;
+  --color-text-muted: #9aa3ad;
+  --color-accent: #00d4aa;        /* primary teal */
+  --color-accent-strong: #00b894;
+  --color-accent-soft: rgba(0, 212, 170, 0.14); /* badge fill */
+  --color-secondary: #22b8e8;     /* cyan-blue, gradient partner */
+  --color-banner-from: #1d4f86;
+  --color-banner-to: #0f7c86;
+  --color-danger: #ff5c6c;
+  --color-success: #00d4aa;
+
+  --gradient-accent: linear-gradient(135deg, var(--color-accent), var(--color-accent-strong));
+  --gradient-hero-text: linear-gradient(180deg, #ffffff 0%, var(--color-accent) 70%, var(--color-secondary) 100%);
+  --gradient-banner: linear-gradient(120deg, var(--color-banner-from), var(--color-banner-to));
+
+  /* Typography */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "JetBrains Mono", Menlo, monospace;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: clamp(1.75rem, 3vw, 2.5rem);   /* section headings */
+  --fs-hero: clamp(2.25rem, 6vw, 4.5rem);  /* hero heading */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --lh-tight: 1.1;
+  --lh-body: 1.6;
+  --tracking-tight: -0.02em;
+
+  /* Spacing (4px base) */
+  --space-1: 0.25rem;  --space-2: 0.5rem;  --space-3: 0.75rem;
+  --space-4: 1rem;     --space-6: 1.5rem;  --space-8: 2rem;
+  --space-12: 3rem;    --space-16: 4rem;   --space-24: 6rem;
+  --section-y: clamp(4rem, 9vw, 8rem);
+  --container: 1200px;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Shadows and glows */
+  --shadow-card: 0 1px 0 rgba(255,255,255,0.03) inset, 0 12px 32px rgba(0,0,0,0.5);
+  --glow-accent: 0 0 32px rgba(0, 212, 170, 0.25);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 150ms;
+  --dur-base: 300ms;
+  --dur-slow: 600ms;
+}
+
+/* Breakpoints (match Framer's desktop / tablet / mobile frames, estimated):
+   mobile < 810px, tablet 810-1199px, desktop >= 1200px */
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-fast: 0ms; --dur-base: 0ms; --dur-slow: 0ms; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}
