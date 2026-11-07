@@ -61,7 +61,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
   }
 };
   return (
-    <section id="contact" className="section container collaboration-section">
+    <section className="section container collaboration-section" id="contacts" >
       <motion.div
         className="cta-panel collaboration-panel"
         initial={reduce ? false : { opacity: 0, y: 25 }}

@@ -22,7 +22,7 @@ function ContactPage() {
         <h1>Let's build something <span className="accent-text">meaningful.</span></h1>
         <p className="section-description">Have a project or an idea? Get in touch and start a conversation with our team.</p>
         <div style={{ marginTop: 30 }}>
-          <a className="btn btn-primary" href="mailto:hello@webnity.com">Email Us ↗</a>
+          {/* <a className="btn btn-primary" href="cwebnity@gmail.com"> ↗</a> */}
         </div>
         <p className="section-description" style={{ fontSize: 11 }}>Replace hello@webnity.com with your real business email before publishing.</p>
       </div>

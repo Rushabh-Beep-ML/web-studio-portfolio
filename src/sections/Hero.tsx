@@ -26,7 +26,7 @@ export default function Hero() {
         </p>
         <div className="hero-actions">
           <Button to="#projects">Explore Our Work</Button>
-          <Button to="/contact" variant="secondary">Let's Collaborate</Button>
+          <Button to="#contacts" variant="secondary">Let's Collaborate</Button>
         </div>
         <div className="hero-stats">
           {facts.map((fact) => (

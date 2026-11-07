@@ -29,7 +29,7 @@ export default function Navbar() {
           </ul>
         </nav>
         <div className="nav-actions">
-          <span className="desktop-contact"><Button to="/contact">Let's Collaborate</Button></span>
+         
           <button className="mobile-toggle" aria-expanded={open} aria-controls="mobile-menu" onClick={() => setOpen(!open)}>
             {open ? "Close" : "Menu"}
           </button>
