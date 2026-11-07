@@ -12,28 +12,28 @@ export type TeamMember = {
 export const team: TeamMember[] = [
   {
     id: "full-stack",
-    name: null,
+    name: "Riddesh Gaikwad",
     designation: "Full-Stack Developer",
     description:
       "Leads end-to-end product development, connecting refined interfaces to dependable back-end systems and guiding each application from architecture through to deployment.",
   },
   {
     id: "backend",
-    name: null,
+    name: "Rushabh Ahire",
     designation: "Backend Developer",
     description:
       "Designs the secure, high-performance services behind every product, from API architecture and data modelling to authentication and long-term reliability.",
   },
   {
     id: "ui-ux",
-    name: null,
+    name: "Shaunak Gujar",
     designation: "UI/UX Designer",
     description:
       "Shapes how products look and feel, translating user needs into clear, accessible interfaces and cohesive design systems.",
   },
   {
     id: "ai-ml",
-    name: null,
+    name: "Deeptansh Rai",
     designation: "AI/ML Engineer",
     description:
       "Builds intelligent capabilities that turn data into insight and automation, from predictive models to AI-powered applications.",

@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Wordmark from "./Wordmark";
 import Button from "./Button";
@@ -7,7 +7,7 @@ const links = [
   { to: "/#services", label: "Services" },
   { to: "/#projects", label: "Projects" },
   { to: "/#approach", label: "Approach" },
-  { to: "/team", label: "Team" },
+  { to: "/#team", label: "Team" },
 ];
 
 export default function Navbar() {
@@ -22,7 +22,7 @@ export default function Navbar() {
             {links.map((item) => (
               <li key={item.to}>
                 {item.to.startsWith("/#")
-                  ? <a href={item.to.slice(1)}>{item.label}</a>
+                  ? <a href={item.to}>{item.label}</a>
                   : <NavLink to={item.to} className={({ isActive }) => isActive ? "active" : ""}>{item.label}</NavLink>}
               </li>
             ))}
@@ -40,7 +40,7 @@ export default function Navbar() {
           <a href="/#services" onClick={() => setOpen(false)}>Services</a>
           <a href="/#projects" onClick={() => setOpen(false)}>Projects</a>
           <a href="/#approach" onClick={() => setOpen(false)}>Approach</a>
-          <Link to="/team" onClick={() => setOpen(false)}>Team</Link>
+          <a href="/#team" onClick={() => setOpen(false)}>Team</a>
           <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
         </div>
       )}

@@ -1,4 +1,4 @@
-﻿import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import Button from "../components/Button";
 
 const facts = [
@@ -25,7 +25,7 @@ export default function Hero() {
           We combine software engineering, thoughtful design and artificial intelligence to transform ambitious ideas into scalable digital experiences.
         </p>
         <div className="hero-actions">
-          <Button to="/#projects">Explore Our Work</Button>
+          <Button to="#projects">Explore Our Work</Button>
           <Button to="/contact" variant="secondary">Let's Collaborate</Button>
         </div>
         <div className="hero-stats">
