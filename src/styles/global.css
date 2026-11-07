@@ -56,6 +56,13 @@ img { max-width: 100%; display: block; }
 .site-shell { min-height: 100vh; overflow: hidden; }
 .container { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
 .section { position: relative; padding-block: 104px; }
+.section#services,
+.section#projects,
+.section#approach,
+.section#team {
+  padding-top: 24px;
+  
+}
 .section-heading { max-width: 720px; margin: 0 auto 56px; text-align: center; }
 .eyebrow {
   display: inline-flex;
